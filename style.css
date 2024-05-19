@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    background: darkgrey;
+    font-family: Arial;
+}
+
+header{
+    background: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a:hover {
+    background-color: #0096ff;
+    color: black;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    max-width: 90%;
+}
+
+main li {
+    line-height: 1.5;
+}
+
+main p {
+    line-height: 1.5;
+}
+
+main iframe {
+    width: 100%;
+}
+
+.video {
+    width: 1200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#au_first{
+    color:#0096ff
+}
+
+.gallery {
+    display: inline-block;
+}
+
+.gallery_item {
+    margin: 5px;
+    border: 3px solid #333333;
+    border-radius: 5px;
+    float: left;
+    width: 240px;
+    background: #333333;
+}
+
+.gallery_item:hover {
+    border: 3px solid #0096ff;
+    transform: scale(1.3);
+}
+
+.gallery_item img {
+    width: 100%;
+    margin-top: 5px;
+    height: auto;
+}
+
+.gallery_item .desc {
+    padding: 15px;
+    text-align: center;
+    color: #0096ff;
+}
+
+.collage:hover {
+    transform: scale(1.2);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,th {
+    border:1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+}
+
+tr:nth-child(even){background-color: #ddd;}
+
+tr:hover {
+    background-color: #c9c9c9;
+}
+
+table a{
+    color: black;
+}
+
+th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #0096ff;
+    color: white;
+}
+
+#poland_flag {
+    border: 3px solid black;
+}
+
+footer {
+    margin-top: 20px;
+    background: #333333;
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*стили для отзыва*/
+.review_container {
+    padding: 16px;
+}
+
+.inner_padding_container {
+    padding: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rorate(45deg);
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width; 0;
+
+}
+
+/*кастомный чекбокс*/
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #D8D8D8;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #636363;
+}
+
+/* показать индификатор когда checked*/
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #333333
+}
+
+/*показать checkmark*/
+.checkmark:after {
+    content: 
+}
+
+/*показать checkmark когда checked*/
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+textarea. input[type=text], input[type=tell], input[type=date], input[type=time], input[type=email], input[type=range], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0096ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
